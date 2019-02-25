@@ -131,8 +131,7 @@ If you would like to repost this position, please sign onto our website and use 
 <br><br> 
 If you require further assistance with your hiring needs, please feel free to contact me or check out our many <a href='http://www.careercentre.org/other-employer-resources/'>resources for employers </a> 
 <br><br>
-Thank you for posting with us, <br>
-Diana Jolly, <br>
+Thank you for posting with us, <br> <br>
 Employer Services Coordinator <br> 
 250.248.3205 Ext. 236" , 'gotb' );
 
@@ -151,7 +150,7 @@ Employer Services Coordinator <br>
 	 * @param WP_Job_Manager_Email $email             Email notification object.
 	 */
 	function change_sender() {
-		return "diana@careercentre.org";
+		return "email@address.com";
 
 	}
 	add_filter( 'job_manager_email_admin_new_job_from', 'change_sender' );
@@ -165,7 +164,7 @@ Employer Services Coordinator <br>
 	 * @param WP_Job_Manager_Email $email             Email notification object.
 	 */
 	function change_recipient() {
-		return "jobpostings@careercentre.org";
+		return "email@address.com";
 	}
 	add_filter( 'job_manager_email_admin_new_job_to', 'change_recipient' );
 
@@ -178,7 +177,7 @@ Employer Services Coordinator <br>
 	 * @param WP_Job_Manager_Email $email             Email notification object.
 	 */
 	function add_cc() {
-		return "shannon@geeksonthebeach.ca";
+		return "email@address.com";
 	}
 
 	add_filter( 'job_manager_email_admin_new_job_cc', 'add_cc' );
